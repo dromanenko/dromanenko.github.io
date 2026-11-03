@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr Dima Romanenko — Communication Scholar</title>
+<meta name="description" content="Dr Dima (Dmitry) Romanenko — New Zealand-based media and communication scholar. A rationalist, praxeological perspective on communication; China's political communication; strategic narratives.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231C2840'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='700' fill='%23ECE7DA' text-anchor='middle'%3EDR%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1C2840; --navy-2:#24324F; --cream:#ECE7DA; --paper:#FAF8F3; --ink:#1E2430;
+  --muted:#5B6474; --gold:#B8904A; --gold-light:#D6B270; --line:#E3DED2; --card:#FFFFFF;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#141B2B; --ink:#E9E6DE; --muted:#A3ABBA; --line:#2A3550; --card:#1A2337; --gold:#D6B270;
+  }
+}
+:root[data-theme="dark"]{--paper:#141B2B; --ink:#E9E6DE; --muted:#A3ABBA; --line:#2A3550; --card:#1A2337; --gold:#D6B270;}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+
+/* nav */
+header.nav{position:sticky;top:0;z-index:10;background:var(--navy);color:var(--cream);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.brand{font-family:var(--serif);font-weight:700;font-size:20px;text-decoration:none;letter-spacing:.2px;white-space:nowrap}
+.nav ul{list-style:none;display:flex;gap:22px;margin:0;padding:0;font-size:14px;font-weight:500}
+.nav ul a{text-decoration:none;opacity:.82}
+.nav ul a:hover{opacity:1;color:var(--gold-light)}
+.lang{font-size:12px;letter-spacing:.08em;border:1px solid rgba(236,231,218,.35);border-radius:999px;padding:3px 10px;opacity:.85;white-space:nowrap}
+@media (max-width:820px){.nav ul{display:none}}
+
+/* hero */
+.hero{background:var(--navy);color:var(--cream);padding:72px 0 84px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:auto -10% -40% auto;width:520px;height:520px;border-radius:50%;
+  background:radial-gradient(closest-side,rgba(214,178,112,.10),transparent);pointer-events:none}
+.hero .wrap{display:grid;grid-template-columns:1fr 260px;gap:56px;align-items:center}
+.eyebrow{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-light);font-weight:600;margin:0 0 14px}
+.hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(40px,6vw,64px);line-height:1.05;margin:0 0 18px;letter-spacing:-.5px}
+.hero .role{font-size:18px;color:#C8CEDB;margin:0 0 26px;max-width:560px}
+.hero blockquote{margin:0 0 32px;padding-left:18px;border-left:3px solid var(--gold-light);font-family:var(--serif);font-style:italic;font-size:22px;line-height:1.4;max-width:600px}
+.hero blockquote cite{display:block;font-family:var(--sans);font-style:normal;font-size:13px;color:#9AA4B8;margin-top:8px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:15px;padding:11px 20px;border-radius:8px;border:1px solid rgba(236,231,218,.35);color:var(--cream)}
+.btn.primary{background:var(--gold-light);border-color:var(--gold-light);color:var(--navy)}
+.btn:hover{filter:brightness(1.08)}
+.portrait{width:260px;height:260px;border-radius:50%;border:4px solid var(--cream);background:var(--navy-2);object-fit:cover;display:block}
+@media (max-width:820px){
+  .hero{padding:48px 0 56px}
+  .hero .wrap{grid-template-columns:1fr;gap:32px}
+  .portrait{width:180px;height:180px;order:-1}
+}
+
+/* sections */
+section{padding:72px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+h2{font-family:var(--serif);font-size:38px;line-height:1.15;margin:0 0 28px;font-weight:700;color:var(--ink)}
+h2::after{content:"";display:block;width:56px;height:3px;background:var(--gold);margin-top:14px}
+.kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600;margin:0 0 10px}
+.lead{font-size:19px;color:var(--muted);max-width:720px;margin:0 0 36px}
+.prose{max-width:720px}
+.prose p{margin:0 0 18px}
+.prose strong{font-weight:600}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+.card h3{font-family:var(--serif);font-size:20px;margin:0 0 8px;font-weight:600}
+.card p{margin:0;color:var(--muted);font-size:15.5px}
+
+/* lists */
+.items{list-style:none;margin:0;padding:0}
+.items li{display:grid;grid-template-columns:110px 1fr;gap:20px;padding:18px 0;border-top:1px solid var(--line)}
+.items li:first-child{border-top:0}
+.items .when{font-size:14px;color:var(--muted);font-weight:500;padding-top:2px}
+.items .what{font-size:16.5px}
+.items .what em{font-family:var(--serif);font-size:17.5px}
+.items .meta{display:block;color:var(--muted);font-size:14.5px;margin-top:2px}
+.doi{display:inline-block;margin-top:6px;font-size:13px;font-weight:600;text-decoration:none;color:var(--gold);border-bottom:1px solid currentColor}
+.tag{display:inline-block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--navy);background:var(--gold-light);border-radius:4px;padding:2px 7px;margin-left:6px;vertical-align:2px}
+@media (max-width:620px){.items li{grid-template-columns:1fr;gap:4px}}
+
+/* writing */
+.writing{display:grid;grid-template-columns:140px 1fr;gap:32px;align-items:center;background:var(--navy);color:var(--cream);border-radius:16px;padding:36px}
+.writing img{width:140px;height:140px;border-radius:50%}
+.writing h3{font-family:var(--serif);font-size:28px;margin:0 0 6px}
+.writing p{margin:0 0 18px;color:#C8CEDB}
+@media (max-width:620px){.writing{grid-template-columns:1fr;text-align:left;padding:28px}.writing img{width:96px;height:96px}}
+
+.langs{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.pill{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 14px;font-size:14.5px}
+.pill b{font-weight:600}
+
+.cta{margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:12px;padding:22px 24px}
+.cta .btn.primary{color:var(--navy)}
+.subhead{font-family:var(--serif);font-size:22px;font-weight:600;margin:40px 0 6px;color:var(--ink)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:18px;margin-top:14px}
+.gallery figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.gallery img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;transition:transform .3s}
+.gallery a:hover img{transform:scale(1.03)}
+.gallery figcaption{font-size:13.5px;color:var(--muted);padding:10px 14px 12px;line-height:1.45}
+.project{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--gold);border-radius:12px;padding:26px 28px 10px;margin:26px 0 8px}
+.project-head h3{font-family:var(--serif);font-size:23px;line-height:1.25;margin:0 0 8px}
+.project-head p{margin:0 0 8px;color:var(--muted);font-size:15.5px;max-width:780px}
+.project .items{margin-top:14px}
+.project .items li{grid-template-columns:90px 1fr}
+@media (max-width:620px){.project{padding:20px 18px 6px}.project .items li{grid-template-columns:1fr}}
+.gallery figure.poster img{object-fit:cover;object-position:top}
+footer{background:var(--navy);color:#AEB6C6;padding:48px 0;font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
+footer a{color:var(--cream);text-decoration:none;border-bottom:1px solid rgba(236,231,218,.3)}
+footer .links{display:flex;flex-wrap:wrap;gap:18px}
+.draft-note{background:#FFF4D6;color:#5A4410;font-size:14px;text-align:center;padding:8px 16px}
+
+/* ===== profile layout ===== */
+.topbar{background:var(--navy);color:var(--cream)}
+.topbar .wrap{max-width:1240px;display:flex;justify-content:space-between;align-items:center;height:56px}
+.topbar .brand{font-family:var(--serif);font-weight:700;font-size:19px;text-decoration:none}
+.layout{max-width:1240px;margin:0 auto;padding:40px 24px 64px;display:grid;grid-template-columns:300px 1fr;gap:48px;align-items:start}
+aside.profile{position:sticky;top:24px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px 26px;text-align:left}
+.profile .portrait{width:180px;height:180px;border-radius:50%;object-fit:cover;display:block;margin:0 auto 18px;border:4px solid var(--paper);box-shadow:0 0 0 1px var(--line)}
+.profile h1{font-family:var(--serif);font-size:28px;line-height:1.15;margin:0 0 4px;text-align:center}
+.profile .degree{text-align:center;color:var(--muted);font-size:15px;margin:0 0 2px}
+.profile .place{text-align:center;color:var(--muted);font-size:14px;margin:0 0 16px}
+.profile blockquote{margin:0 0 20px;padding:12px 14px;border-left:3px solid var(--gold);background:var(--paper);font-family:var(--serif);font-style:italic;font-size:16px;line-height:1.4;border-radius:0 8px 8px 0}
+.plinks{list-style:none;margin:0 0 18px;padding:0;border-top:1px solid var(--line)}
+.plinks li{border-bottom:1px solid var(--line)}
+.plinks a{display:flex;justify-content:space-between;padding:10px 2px;text-decoration:none;font-size:15px;font-weight:500}
+.plinks a::after{content:"→";color:var(--gold)}
+.plinks a:hover{color:var(--gold)}
+.profile .side-h{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:18px 0 8px}
+.profile .langlist{font-size:14.5px;line-height:1.7;margin:0}
+.profile .langlist b{font-weight:600}
+.profile .email{display:block;text-align:center;margin-top:18px}
+.profile .cat{display:flex;gap:12px;align-items:center;margin-top:20px;padding:12px;border-radius:10px;background:var(--navy);color:var(--cream);text-decoration:none}
+.profile .cat img{width:52px;height:52px;border-radius:50%}
+.profile .cat b{font-family:var(--serif);font-size:17px;display:block}
+.profile .cat span{font-size:13px;color:#C8CEDB}
+.tabs{display:flex;flex-wrap:wrap;gap:4px;border-bottom:2px solid var(--line);margin-bottom:36px}
+.tabs a{padding:12px 18px;text-decoration:none;font-weight:600;font-size:15.5px;color:var(--muted);border-bottom:3px solid transparent;margin-bottom:-2px}
+.tabs a:hover{color:var(--ink)}
+.tabs a[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--gold)}
+.panel{padding:0;border:0}
+.js .panel{display:none}
+.js .panel.active{display:block}
+.panel .project{margin-top:0}
+.offer{list-style:none;margin:4px 0 20px;padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.offer li{font-family:var(--serif);font-size:18px;font-weight:600;line-height:1.35;padding:5px 0 5px 18px;position:relative}
+.offer li::before{content:"";position:absolute;left:2px;top:15px;width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.plinks{border-top:0 !important}
+.foot{background:var(--navy);color:#AEB6C6;font-size:14px;padding:0}
+.grid.two{grid-template-columns:repeat(2,1fr)}
+@media (max-width:700px){.grid.two{grid-template-columns:1fr}}
+.foot .wrap{max-width:1240px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:22px 24px}
+.foot a{color:var(--cream)}
+@media (max-width:900px){.layout{grid-template-columns:1fr}aside.profile{position:static}}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#about">Dr Dima Romanenko</a>
+    <span class="lang">EN · 中文 soon</span>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="profile">
+    <img class="portrait" src="assets/portrait.jpg" alt="Portrait of Dr Dima Romanenko">
+    <h1>Dr Dima Romanenko</h1>
+    <p class="degree">PhD in Media and Communication</p>
+    <p class="place">New Zealand</p>
+    <ul class="offer">
+      <li>Lucid analysis</li>
+      <li>Original research</li>
+      <li>Evidence-based investigations</li>
+      <li>Expert academic support</li>
+    </ul>
+    <ul class="plinks">
+      <li><a href="https://orcid.org/0009-0004-6927-7144">ORCID</a></li>
+      <li><a href="https://www.researchgate.net/profile/Dmitry-Romanenko-2">ResearchGate</a></li>
+      <li><a href="https://scholar.google.com/citations?user=In4NA0oAAAAJ&amp;hl=en">Google Scholar</a></li>
+      <li><a href="https://luciditycat.substack.com">Substack</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <nav class="tabs" role="tablist">
+      <a href="#about" role="tab">About</a>
+      <a href="#projects" role="tab">Research Projects</a>
+      <a href="#publications" role="tab">Publications</a>
+      <a href="#talks" role="tab">Presentations</a>
+    </nav>
+
+<section id="about" class="panel" role="tabpanel">
+    <h2>About</h2>
+    <div class="prose">
+      <p>I am a New Zealand-based scholar with a PhD in Media and Communication from the University of Canterbury. I work predominantly within the <strong>praxeological approach to communication</strong>, which combines rationalist philosophy with praxeological methodology and treats communication as a subtype of human action. The approach was formulated by Professor Pavel Slutskiy (<a href="https://doi.org/10.1007/978-981-33-6664-0">2021</a>, <a href="https://doi.org/10.1007/978-981-97-1013-3">2024</a>). At its core, it draws on Ludwig von Mises’s praxeology and the work of the scholars it inspired, in dialogue with speech-act theory (J. L. Austin, John Searle).</p>
+      <p>My expertise combines four backgrounds:</p>
+    </div>
+    <div class="grid two" style="margin-top:6px">
+      <div class="card"><h3>Linguistics &amp; cross-cultural communication</h3><p>A trained sinologist and specialist in cross-cultural communication, fluent in English, Chinese, Russian and Ukrainian.</p></div>
+      <div class="card"><h3>Area studies</h3><p>Primarily Chinese studies, including culture, politics, economy and history.</p></div>
+      <div class="card"><h3>Economics &amp; management</h3><p>Master’s degree in Management, with more than 15 years of experience in international business, including over 10 years of professional experience in China.</p></div>
+      <div class="card"><h3>Communication in International Relations</h3><p>Research on New Zealand vis-à-vis the Russia–Ukraine war, China–Ukraine relations, EU heritage diplomacy, digital diplomacy, strategic communication, etc.</p></div>
+    </div>
+    <div class="cta">
+      <div>I am open to research collaboration, consulting, teaching and media commentary in my areas of expertise.</div>
+      <a class="btn primary" href="mailto:romanenkodv@gmail.com?subject=Enquiry%20from%20your%20website">Contact me</a>
+    </div>
+</section>
+
+<section id="projects" class="panel" role="tabpanel">
+    <h2>Research Projects</h2>
+
+    <div class="project">
+      <div class="project-head">
+        <h3>HER-UKR: Challenges and Opportunities for EU Heritage Diplomacy in Ukraine</h3>
+        <p>International research network of 15 universities, coordinated by KU Leuven (Belgium) and funded by the European Commission through Erasmus+ (Jean Monnet). Work Package 5, Strategic Communication, is led by the University of Canterbury.</p>
+        <a class="doi" href="https://www.kuleuven.be/her-ukr">Project website</a>
+      </div>
+      <ul class="items">
+      <li><span class="when">2024</span><span class="what">China’s Narratives of Ukraine’s Cultural and Historic Heritage During Russia’s Full-Scale Invasion, and of the EU in This Context<span class="meta">Country Researcher (China), WP5 — <i>resulted in a journal article in the European Foreign Affairs Review and the WP5 report</i></span></span></li>
+      <li><span class="when">2026</span><span class="what">Ukraine’s Digital Diplomacy in China<span class="meta">Country Researcher (China), WP5 — <i>resulted in a co-authored article in the Australian and New Zealand Journal of European Studies (forthcoming)</i></span></span></li>
+      <li><span class="when">2026</span><span class="what">Russia’s Narratives of Ukraine’s Cultural and Historic Heritage During Russia’s Full-Scale Invasion, and of the EU in This Context<span class="meta">Country Research Lead (Russia), WP5 — <span class="tag" style="margin-left:0">In progress</span> results to be announced</span></span></li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-head">
+        <h3>Doctoral Research: New Zealand’s Strategic Communication about Russia’s War of Aggression against Ukraine</h3>
+        <p>University of Canterbury, 2022–2025</p>
+        <a class="doi" href="https://doi.org/10.26021/16505">Thesis</a>
+      </div>
+    </div>
+
+    <ul class="items" style="margin-top:22px">
+      <li><span class="when">2026</span><span class="what">Academic–Policy Nexus in Relation to Propaganda and Information Influence in Nordic Countries (Cases of Finland and Sweden)<span class="meta">Independent research, New Zealand</span></span></li>
+      <li><span class="when">2026</span><span class="what">China and the Chinese in New Zealand Political Discourse<span class="meta">Independent research, New Zealand</span></span></li>
+      <li><span class="when">2026</span><span class="what">New Zealand’s Response to the Russia–Ukraine War: Policy Analyses<span class="meta">Independent research, New Zealand</span></span></li>
+      <li><span class="when">2026</span><span class="what">China and the Russia–Ukraine War: Beyond the Headlines<span class="meta">New Zealand Contemporary China Research Centre, Te Herenga Waka—Victoria University of Wellington</span></span></li>
+      <li><span class="when">2026</span><span class="what">Ukraine–China Relations in the Context of Russia’s Full-Scale Invasion of Ukraine<span class="meta">Department of Media &amp; Communication, University of Canterbury / New Zealand Contemporary China Research Centre, Victoria University of Wellington</span></span></li>
+      <li><span class="when">2023 – 2024</span><span class="what">Framing Ukraine in New Zealand’s Media During Russia’s Full-Scale Invasion<span class="meta">Public Diplomacy Research Hubs, Department of Media &amp; Communication, University of Canterbury</span></span></li>
+    </ul>
+  </section>
+
+<section id="publications" class="panel" role="tabpanel">
+    <h2>Publications</h2>
+    <ul class="items">
+      <li><span class="when">2026</span><span class="what">Angeline, M., Szatters, K., &amp; Romanenko, D. Ukraine’s digital heritage diplomacy in China and Indonesia: Soft power visions in comparative perspective. <em>Australian and New Zealand Journal of European Studies</em>, 18(2).<span class="tag">Forthcoming</span><span class="meta">ISSN 1837-2147 (Print) · ISSN 1836-1803 (Online)</span><a class="doi" href="https://esaanz.org.au/anzjes/">Journal website</a></span></li>
+      <li><span class="when">2025</span><span class="what">Romanenko, D. “Telling China’s story well”: China’s media narratives of Ukraine’s cultural and historic heritage at times of Russia’s full-scale invasion and of the EU in this context. <em>European Foreign Affairs Review</em>, 30(4), 587–598.<br><a class="doi" href="https://doi.org/10.54648/eerr2025038">doi:10.54648/eerr2025038</a></span></li>
+      <li><span class="when">2025</span><span class="what">Romanenko, D. <em>Media narratives about Russia’s war of aggression against Ukraine: The case of New Zealand’s coverage of the full-scale invasion</em>. Doctoral thesis, University of Canterbury.<br><a class="doi" href="https://doi.org/10.26021/16505">doi:10.26021/16505</a></span></li>
+      <li><span class="when">2024</span><span class="what">Romanenko, D., &amp; Chaban, N. <em>HER-UKR WP5: Strategic communication — Ukrainian heritage in the Chinese media</em>. Report, KU Leuven.<br><a class="doi" href="https://doi.org/10.13140/RG.2.2.28696.87046">doi:10.13140/RG.2.2.28696.87046</a></span></li>
+    </ul>
+</section>
+
+<section id="talks" class="panel" role="tabpanel">
+    <h2>Presentations</h2>
+    <h3 class="subhead">Conference papers</h3>
+    <ul class="items">
+      <li><span class="when">Nov 2026</span><span class="what"><i>Cui servitis?</i> Before asking whose interests the new journalism(s) will serve, ask whose interests journalism serves now<span class="tag">Upcoming</span><span class="meta">JEANZ–JERAA Joint Conference “Hall of Mirrors: The Journalist in Public Life”, Auckland University of Technology</span></span></li>
+      <li><span class="when">Dec 2024</span><span class="what">Whose Narrative Does China Tell About Ukraine’s Cultural Heritage?<span class="meta">ESAANZ Conference, Jean Monnet Policy Network, University of Melbourne</span></span></li>
+      <li><span class="when">Oct 2024</span><span class="what">Strategic Communication of Ukraine’s Heritage: Focus on the Non-Western Media — Views from the Global South: China<span class="meta">Conference “Challenges of EU Heritage Diplomacy Studies”, KU Leuven</span></span></li>
+      <li><span class="when">Jul 2024</span><span class="what">Ukrainian Cultural Heritage in Chinese Political Narratives<span class="meta">IAMCR 2024 Conference, panel “The ‘Battle of Narratives’ in an Uncertain World: Communicating Ukraine and Its Historical and Cultural Heritage in Global Media. Focus on the Global South”, Christchurch</span></span></li>
+      <li><span class="when">Jul 2024</span><span class="what">Images of Ukrainians in New Zealand Media: From the ‘Win a Wife’ Competition to ‘Desperate, Powerless, Disoriented, with Empty Eyes’<span class="meta">IAMCR 2024 Conference, Christchurch</span></span></li>
+    </ul>
+    <h3 class="subhead">Public seminars</h3>
+    <ul class="items">
+      <li><span class="when">Aug 2026</span><span class="what">China and the Russia–Ukraine War: Beyond the Headlines<span class="meta">Public seminar (Global China Seminar), New Zealand Contemporary China Research Centre, Te Herenga Waka—Victoria University of Wellington</span><a class="doi" href="assets/talks/vuw-global-china-seminar-2026.pdf" target="_blank" rel="noopener">Poster (PDF)</a></span></li>
+      <li><span class="when">Jun 2026</span><span class="what">Representations of the Chinese in New Zealand Media<span class="meta">Public seminar, New Zealand China Friendship Society (Nelson Branch)</span></span></li>
+    </ul>
+    <h3 class="subhead">Briefings</h3>
+    <ul class="items">
+      <li><span class="when">Dec 2024</span><span class="what">Framing Ukraine in Oceania’s Media: Australia, New Zealand and Fiji<span class="meta">Presentation to the UK High Commissioner to New Zealand, Christchurch</span></span></li>
+      <li><span class="when">Dec 2024</span><span class="what">Narratives and Frames of Ukraine in the Latest Media Coverage in Australia, New Zealand and Fiji<span class="meta">Presentation to H.E. Vasyl Myroshnychenko, Ambassador of Ukraine to Australia and New Zealand</span></span></li>
+      <li><span class="when">Dec 2023</span><span class="what">Narratives and Frames of Ukraine in the Media Coverage in Australia and New Zealand (2022–2023)<span class="meta">Presentation to the Ukrainian parliamentary think tank “Ukrainian Prism”, University of Canterbury</span></span></li>
+    </ul>
+    <h3 class="subhead">From the events</h3>
+    <div class="gallery">
+      <figure><a href="assets/talks/esaanz-2024.jpg" target="_blank" rel="noopener"><img src="assets/talks/esaanz-2024.jpg" alt="ESAANZ conference session" loading="lazy"></a><figcaption>ESAANZ Conference, University of Melbourne, December 2024 (presenting online)</figcaption></figure>
+      <figure><a href="assets/talks/ku-leuven-2024.jpg" target="_blank" rel="noopener"><img src="assets/talks/ku-leuven-2024.jpg" alt="HER-UKR conference at KU Leuven" loading="lazy"></a><figcaption>Conference “Challenges of EU Heritage Diplomacy Studies”, KU Leuven, October 2024 (presenting online)</figcaption></figure>
+      <figure><a href="assets/talks/iamcr-2024-presenting.jpg" target="_blank" rel="noopener"><img src="assets/talks/iamcr-2024-presenting.jpg" alt="Presenting at IAMCR 2024" loading="lazy"></a><figcaption>Presenting “Ukrainian Cultural Heritage in Chinese Political Narratives”, IAMCR 2024 Conference, Te Pae Christchurch Convention Centre, July 2024</figcaption></figure>
+      <figure><a href="assets/talks/iamcr-2024.jpg" target="_blank" rel="noopener"><img style="object-position:50% 45%" src="assets/talks/iamcr-2024.jpg" alt="At the IAMCR 2024 Conference" loading="lazy"></a><figcaption>IAMCR 2024 Conference, Ōtautahi Christchurch, July 2024</figcaption></figure>
+    </div>
+</section>
+  </main>
+</div>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© 2026 Dr Dima Romanenko</span>
+    <a href="mailto:romanenkodv@gmail.com">romanenkodv@gmail.com</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tabs a'));
+  var ids=tabs.map(function(a){return a.getAttribute('href').slice(1)});
+  function show(id){
+    if(ids.indexOf(id)<0) id=ids[0];
+    tabs.forEach(function(a){a.setAttribute('aria-selected',a.getAttribute('href')==='#'+id)});
+    ids.forEach(function(x){document.getElementById(x).classList.toggle('active',x===id)});
+  }
+  tabs.forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();var id=a.getAttribute('href').slice(1);history.replaceState(null,'','#'+id);show(id);window.scrollTo({top:0})})});
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1));window.scrollTo(0,0)});
+  show(location.hash.slice(1));
+  window.addEventListener('load',function(){window.scrollTo(0,0)});
+})();
+</script>
+</body>
+</html>
